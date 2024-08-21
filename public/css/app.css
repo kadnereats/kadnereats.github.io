@@ -602,6 +602,30 @@ video {
 * by plugins.
 */
 
+.blog-card {
+  padding-top: 150px;
+}
+
+.blog-footer-view {
+  padding-top: 326.75px;
+}
+
+.blog-view {
+  padding-left: 188px;
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-card-image {
+  min-width: 250px;
+}
+
+.blog-card-tags {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
