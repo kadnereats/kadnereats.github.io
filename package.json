@@ -7,11 +7,14 @@
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
   "scripts": {
     "build": "tailwindcss build src/css/tailwind.css -o public/css/app.css",
-    "product": "tailwindcss build src/css/tailwind.css -o public/css/app.css --minify",
-    "watch": "tailwindcss build src/css/tailwind.css -o public/css/app.css --watch"
+    "product": "tailwindcss build -i src/css/tailwind.css -o public/css/app.css --minify",
+    "watch": "tailwindcss build src/css/tailwind.css -o public/css/app.css --watch",
+    "start": "live-server public"
   },
   "repository": {
     "type": "git",
@@ -22,13 +25,13 @@
     "html template"
   ],
   "author": {
-    "name": "Hossein Nodehi",
-    "email": "nodehi7813@gmail.com",
-    "url": "https://nothehi.ir"
+    "name": "Rahil Shaik",
+    "email": "rahilisashaik@berkeley.edu",
+    "url": "https://rahilisashaik.github.io/"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Nothehi/vertex/issues"
+    "url": "https://github.com/kadnereats/kadnereats.github.io/issues"
   },
-  "homepage": "https://github.com/Nothehi/vertex#readme"
+  "homepage": "https://github.com/kadnereats/kadnereats.github.io#readme"
 }

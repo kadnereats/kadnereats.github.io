@@ -750,6 +750,10 @@ video {
   height: 2rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -798,7 +802,6 @@ video {
 
 .flex-col {
   flex-direction: column;
-  padding-right: 16px;
 }
 
 .flex-wrap {
@@ -1008,16 +1011,6 @@ video {
 
 .font-medium {
   font-weight: 500;
-}
-
-/*rahil*/
-.blog-view {
-    padding-left: 190px;
-    padding-bottom: 237px;
-}
-
-.rahil-footer {
-
 }
 
 .font-semibold {
@@ -1311,7 +1304,6 @@ video {
   .md\:pt-8 {
     padding-top: 2rem;
   }
-  
 }
 
 @media (min-width: 1024px) {
@@ -1383,14 +1375,5 @@ video {
 }
 
 /**
-* blog post view style
+* Addentional utilities 
 */
-/* 
-@media (min-width: 768px) {
-    .blogpostview-container {
-        width: 100%;
-    }
-} */
-
-
-
