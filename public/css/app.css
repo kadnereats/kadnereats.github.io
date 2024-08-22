@@ -607,13 +607,7 @@ video {
 }
 
 .blog-footer-view {
-  padding-top: 326.75px;
-}
-
-.blog-view {
-  padding-left: 188px;
-  display: flex;
-  flex-direction: row;
+  padding-top: 345px;
 }
 
 .blog-card-image {
@@ -625,6 +619,29 @@ video {
   padding-left: 0.5rem;
   padding-top: 0.5rem;
 }
+
+.footer-text {
+  text-align: right;
+  font-size: x-small;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+
+}
+
+.flex-container {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+}
+
+.sidebar {
+  margin-right: 20px; /* Optional: space between sidebar and blog post */
+}
+
+.blog-view {
+  flex: 1; /* Allows blog post to take the remaining space */
+}
+
 
 .sr-only {
   position: absolute;

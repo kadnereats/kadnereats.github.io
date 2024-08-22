@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A minimal and light template for food blogging.">
+    <meta name=”robots” content="index, follow">
+    <meta name="keywords" content="minimal blog, food blog, html template">
+    <meta name="author" content="Rahil Shaik">
+
+    <title>Kadner & Rahil Eats</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+
+    <!-- Fonts -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v26.0.2/dist/font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark:bg-gray-900 bg-gray-200">
+    <!-- Header -->
+    <header class="container mx-auto md:mt-4">
+        <!-- Navigation -->
+        <nav
+            class="hidden fixed w-full z-50 h-16 md:h-auto md:static md:flex items-center p-2 text-gray-900 dark:text-white bg-white dark:bg-gray-800 md:rounded-lg shadow font-medium capitalize">
+            <!-- Logo -->
+            <div
+                class="flex items-center flex-no-shrink px-2 rtl:border-0 md:rtl:border-l md:rtl:border-r-0 border-0 md:border-r border-gray-300">
+                <a href="#">
+                </a>
+                <div class="flex flex-col mx-auto ml-4 rtl:mr-2 rtl:ml-0 with-right-padding">
+                    <span class="font-semibold text-xl tracking-tight text-primary-700">Kadner & Rahil</span>
+                    <span class="font-medium text-sm tracking-tight text-black dark:text-gray-400">Food Blog</span>
+                </div>
+            </div>
+
+            <!-- Menus -->
+            <div class="hidden md:flex">
+                <a href="./index.html"
+                    class="flex items-center px-2 py-1 cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-gray-700 dark:hover:text-gray-200 text-sm rounded ml-4 rtl:mr-4 rtl:ml-0">
+                    <svg class="w-8 p-2 bg-gray-200 dark:bg-gray-900 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+                        <line x1="13" y1="8" x2="15" y2="8" />
+                        <line x1="13" y1="12" x2="15" y2="12" />
+                    </svg>
+                    <span class="mx-2">Blog</span>
+                </a>
+            </div>
+
+            <!-- Profile -->
+            <div class="flex items-center ml-auto rtl:mr-auto rtl:ml-0 rtl:mr-0 rtl:flex-row-reverse">
+                <!-- Search -->
+                <div class="hidden lg:block relative mr-10">
+                    <input type="search" placeholder="Search"
+                        class="appearance-none border border-grey dark:border-gray-900 rounded-lg pl-8 pr-4 py-2 focus:outline-none dark:bg-gray-900">
+                    <div class="absolute  top-0 bottom-0 left-0 pl-3 flex items-center justify-center">
+                        <svg class="fill-current text-gray-400 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Mobile Hamberger -->
+                <button
+                    class="block md:hidden rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 mx-1">
+                    <span class="flex items-center cursor-pointer">
+                        <svg class="w-8 p-2 bg-gray-200 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <line x1="4" y1="6" x2="20" y2="6" />
+                            <line x1="4" y1="12" x2="20" y2="12" />
+                            <line x1="4" y1="18" x2="20" y2="18" />
+                        </svg>
+                    </span>
+                </button>
+
+                <!-- User Actions -->
+                <div class="hidden md:block mx-3 relative">
+                    <div>
+                        <button
+                            class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                            id="user-menu" aria-haspopup="true">
+                            <span class="sr-only">Open user menu</span>
+                            <img class="h-8 w-8 rounded-full"
+                                src="./img/kadnereatspfp.jpg">
+                        </button>
+                    </div>
+
+                    <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white dark:bg-gray-900 ring-1 ring-black ring-opacity-5 hidden"
+                        role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
+                            role="menuitem">Your
+                            Profile</a>
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
+                            role="menuitem">Settings</a>
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
+                            role="menuitem">Sign
+                            out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="container mx-auto">
+        <div class="flex flex-row flex-wrap md:pt-8">
+            <!-- Side bar -->
+            <div class="hidden lg:block md:block lg:w-2/12 md:w-3/12">
+                <nav class="sticky top-2">
+                    <ul class="relative divide-y divide-gray-300 dark:divide-gray-800">
+                        <li>
+                            <a href = "./index.html"></a>
+                            <button type="button"
+                                class="py-2 px-3 w-full flex items-center focus:outline-none focus-visible:underline focus:h-10 focus:bg-white dark:focus:bg-gray-800 rounded-lg focus:shadow focus:text-blue-600">
+                                <span class="text-2xl">🏠</span>
+                                <span class="ml-2 rtl:mr-2 rtl:ml-0 font-spacemono text-sm font-medium">
+                                    Home
+                                </span>
+                            </button>
+                        </a>
+                        </li>
+
+                        <li>
+                            <a href = "./tags.html">
+                            <button type="button"
+                                class="py-2 px-3 w-full flex items-center focus:outline-none focus-visible:underline focus:h-10 focus:bg-white dark:focus:bg-gray-800 rounded-lg focus:shadow focus:text-blue-600">
+                                <span class="text-2xl">🔖</span>
+                                <span class="ml-2 rtl:mr-2 rtl:ml-0 font-spacemono text-sm font-medium">
+                                    Tags
+                                </span>
+                            </button>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Content -->
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-0 md:gap-5 lg:w-10/12 md:w-9/12 md:pl-4" href = "./blogpostview.html">
+                <div class="lg:rounded-lg md:rounded-lg overflow-hidden shadow transition duration-300 ease-in-out hover:shadow-2xl dark:bg-gray-800 border-gray-600 bg-white"
+                    id = "card-container">
+
+                    
+                    <div class="px-6 pt-4 flex items-center" >
+
+                        <a id = "card-image" href = "./blogpostview.html">
+                            <img class="block h-full w-full blog-card-image" src="https://dummyimage.com/1024x512/fff/aaa" alt="https://dummyimage.com/1024x512/fff/aaa">
+                        </a>
+                        <div class="blog-card-tags">
+                        <a  href = "./tags.html"
+                            id = "tags-list"
+                            class="inline-block font-montserrat bg-blue-100 text-blue-700 dark:text-white dark:bg-blue-700 rounded-full px-3 py-1 text-xs font-semibold">
+                            Berkeley
+                        </a>
+                        <a  href = "./tags.html"
+                            id = "tags-list"
+                            class="inline-block font-montserrat bg-blue-100 text-blue-700 dark:text-white dark:bg-blue-700 rounded-full px-3 py-1 text-xs font-semibold">
+                            Thai
+                        </a>
+                        <a  href = "./tags.html"
+                            id = "tags-list"
+                            class="inline-block font-montserrat bg-blue-100 text-blue-700 dark:text-white dark:bg-blue-700 rounded-full px-3 py-1 text-xs font-semibold">
+                            Vegetarian
+                        </a>
+                    </div>
+                    </div>
+                    <div class="px-6 py-4">
+                        <a 
+                        id = "card-title"
+                        class="font-montserrat font-bold text-xl mb-2"
+                        href = "./blogpostview.html">
+                            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                        </a>
+                        <a href = "./blogpostview.html">
+                        <p class="text-gray-600 text-sm text-justify font-spacemono" id = "card-paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cum nostrum necessitatibus
+                            dolorum maxime cumque sed non. Mollitia, eos quasi, deserunt pariatur nihil, accusamus
+                            quisquam aut totam perferendis maxime modi?.
+                        </p>
+                        </a>
+                    </div>
+                    <div class="px-6 pb-4 flex items-center">
+                        <div class="inline-flex items-center">
+                            <div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+                                <img src="./img/kadnereatspfp.jpg",
+                                alt="https://randomuser.me/api/portraits/men/11.jpg" />
+                            </div>
+                            <div class="flex-1 pl-2 rtl:pr-2 rtl:pl-0">
+                                <a href="#">
+                                    <h2 class="font-sm mb-1 font-montserrat">Alice Kadner</h2>
+                                </a>
+                                <p class=" opacity-50 text-xs font-montserrat">3 hours ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+
+
+                        const titil = document.getElementById('card-title');   
+                        console.log(titil.innerText)     
+                        const cardContainer = document.getElementById('card-container');
+                        cardContainer.addEventListener('click', () => {
+                            const content = cardContainer.innerText;
+
+                            const tags = document.querySelectorAll('[id="tags-list"]')
+                                        .map(el => el.innerText);
+                            const title = document.getElementById('card-title').innerText;   
+                            const paragraph = content.split('\n')[4]
+                            const author = content.split('\n')[3]
+                            const date = content.split('\n')[4]
+
+                            const data = {
+                                "blogTags": tags,
+                                "blogTitle": title,
+                                "blogParagraph": paragraph,
+                                "blogAuthor": author,
+                                "blogDate": date
+                            }
+                            
+                            localStorage.setItem('blogData', JSON.stringify(data));
+                        });
+                        
+                      </script>
+                </div>
+
+
+                <div
+                    class="lg:rounded-lg md:rounded-lg overflow-hidden shadow transition duration-300 ease-in-out hover:shadow-2xl dark:bg-gray-800 border-gray-600 bg-white"
+                    id = "card-container">
+                    
+                    <div class="px-6 pt-4 flex items-center">
+                        <a id = "card-image" href = "./blogpostview.html">
+                            <img class="block h-full w-full blog-card-image" src="https://dummyimage.com/1024x512/fff/aaa" alt="https://dummyimage.com/1024x512/fff/aaa">
+                        </a>
+                    <div class="blog-card-tags">
+                        <a  href = "./tags.html"
+                            id = "tags-list"
+                            class="inline-block font-montserrat bg-blue-100 text-blue-700 dark:text-white dark:bg-blue-700 rounded-full px-3 py-1 text-xs font-semibold">
+                            Berkeley
+                        </a>
+
+                        <a  href = "./tags.html"
+                            id = "tags-list"
+                            class="inline-block font-montserrat bg-blue-100 text-blue-700 dark:text-white dark:bg-blue-700 rounded-full px-3 py-1 text-xs font-semibold">
+                            Thai
+                        </a>
+                    </div>
+                        <div class="ml-auto rtl:mr-auto rtl:ml-0">
+                        </div>
+                    </div>
+
+                    <div class="px-6 py-4">
+                        <a 
+                        id = "card-title"
+                        class="font-montserrat font-bold text-xl mb-2"
+                        href = "./blogpostview.html">
+                            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                        </a>
+                        <a href = "./blogpostview.html">
+                        <p class="text-gray-600 text-sm text-justify font-spacemono" id = "card-paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cum nostrum necessitatibus
+                            dolorum maxime cumque sed non. Mollitia, eos quasi, deserunt pariatur nihil, accusamus
+                            quisquam aut totam perferendis maxime modi?.
+                        </p>
+                        </a>
+                    </div>
+                    <div class="px-6 pb-4 flex items-center">
+                        <div class="inline-flex items-center">
+                            <div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+                                <img src="./img/kadnereatspfp.jpg",
+                                alt="https://randomuser.me/api/portraits/men/11.jpg" />
+                            </div>
+                            <div class="flex-1 pl-2 rtl:pr-2 rtl:pl-0">
+                                <a href="#">
+                                    <h2 class="font-sm mb-1 font-montserrat">Alice Kadner</h2>
+                                </a>
+                                <p class=" opacity-50 text-xs font-montserrat">3 hours ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        localStorage.clear()
+                        const cardContainer1 = document.getElementById('card-container');
+                        cardContainer1.addEventListener('click', () => {
+                            const content = cardContainer1.innerText;
+                            const tags = content.split('\n')[0]
+                            const title = content.split('\n')[2]
+                            const paragraph = content.split('\n')[4]
+                            const author = content.split('\n')[3]
+                            const date = content.split('\n')[4]
+
+                            
+
+                            const data = {
+                                "blogTags": tags,
+                                "blogTitle": title,
+                                "blogParagraph": paragraph,
+                                "blogAuthor": author,
+                                "blogDate": date
+                            }
+                            
+                            localStorage.setItem('blogData', JSON.stringify(data));
+                        });
+                        
+                      </script>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+
+    <!-- Footer -->
+    <footer class="max-w flex md:my-4 blog-card">
+        <div class="container mx-auto text-center bg-white dark:bg-gray-800 md:rounded-lg shadow font-medium">
+            <div class="flex justify-start items-start py-8">
+                <ul class="list-reset flex">
+                    <li class="ml-8 mt-2">
+                        <a class="text-grey-darker no-underline hover:text-white" href="./img/termsofuse.txt">Terms of Use</a>
+                    </li>
+                    <li class="ml-8 mt-2">
+                        <a class="text-grey-darker no-underline hover:text-white" href="./img/privacy.txt">Privacy</a>
+                    </li>
+                </ul>
+
+                <ul class="list-reset flex ml-auto">
+                    <li class="mr-8">
+                        <a class="text-grey-darker no-underline hover:text-white" href="https://www.instagram.com/alicekadner">Instagram</a>
+                    </li>
+                    <li class="mr-8">
+                        <a class="text-grey-darker no-underline hover:text-white" href="https://www.x.com/rahilisashaik/">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <h1>All Rights Reserved, Rahil Shaik &copy</h1>
+</body>
+
+
+
+</html>
